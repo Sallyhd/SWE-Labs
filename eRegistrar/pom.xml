@@ -8,11 +8,11 @@
 		<version>3.1.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
+	<groupId>edu.mum.cs.cs425</groupId>
 	<artifactId>eRegistrar</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>eRegistrar</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Spring Boot eRegistrar</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -30,6 +30,12 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
 		<dependency>
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>

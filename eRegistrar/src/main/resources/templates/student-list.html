@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Student List</title>
+</head>
+<body>
+<h1>Sally Haddad</h1>
+
+<nav>
+  <ul>
+    <li><a href="/eregistrar">Home</a></li>
+    <li><a href="/students/add">Register Student</a></li>
+  </ul>
+</nav>
+<h1>Student List</h1>
+<table>
+  <thead>
+  <tr>
+    <th>Student Number</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <!-- Add more table headers as needed -->
+  </tr>
+  </thead>
+  <tbody>
+  <!-- Loop through students and display them in rows -->
+  <tr th:each="student : ${students}">
+    <td th:text="${student.studentNumber}"></td>
+    <td th:text="${student.firstName}"></td>
+    <td th:text="${student.lastName}"></td>
+    <!-- Add more table data as needed -->
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

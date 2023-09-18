@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Delete Student</title>
+
+</head>
+<body>
+<h1>Sally Haddad</h1>
+
+<nav>
+  <ul>
+    <li><a href="/eregistrar">Home</a></li>
+    <li><a href="/students">List Students</a></li>
+  </ul>
+</nav>
+<h1>Delete Student</h1>
+<p>Are you sure you want to delete this student?</p>
+<form method="post" th:action="@{/students/delete}">
+  <input type="hidden" id="studentId" name="studentId" th:value="${student.studentId}">
+  <button type="submit">Delete</button>
+</form>
+</body>
+</html>
